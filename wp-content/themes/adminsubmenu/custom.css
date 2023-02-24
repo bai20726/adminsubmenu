@@ -1,0 +1,19 @@
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.notice {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.notice-success {
+    color: #008000;
+    background-color: #d7f3e3;
+    border-color: #ffffff;
+}
