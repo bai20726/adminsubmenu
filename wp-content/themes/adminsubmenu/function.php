@@ -37,3 +37,10 @@ function load_plugin_textdomain() {
 	load_plugin_textdomain( 'employee-management', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 add_action( 'plugins_loaded', 'load_plugin_textdomain' );
+
+function employees_list_shortcode() {
+	ob_start();
+	view_employees_page();
+	return ob_get_clean();
+}
+add_shortcode( 'employees_list', 'employees_list_shortcode' );
